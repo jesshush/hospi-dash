@@ -1,0 +1,153 @@
+/* Base style for all alerts */
+.alert {
+    padding: 10px !important;
+    border-radius: 0.5rem; /* More rounded corners for a modern look */
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 500; /* Slightly bold text for emphasis */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+}
+
+.alert p{
+    margin: auto 10px;
+}
+/* Danger Alert */
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    border: 1px solid #f5c6cb; /* Ensure border visibility */
+}
+
+.alert-danger .alert-icon {
+    color: #721c24; /* Icon color for consistency */
+}
+
+/* Warning Alert */
+.alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    border: 1px solid #ffeeba; /* Ensure border visibility */
+}
+
+.alert-warning .alert-icon {
+    color: #856404; /* Icon color for consistency */
+}
+
+/* Info Alert */
+.alert-info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+    border: 1px solid #bee5eb; /* Ensure border visibility */
+}
+
+.alert-info .alert-icon {
+    color: #0c5460; /* Icon color for consistency */
+}
+
+/* Success Alert */
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    border: 1px solid #c3e6cb; /* Ensure border visibility */
+}
+
+.alert-success .alert-icon {
+    color: #155724; /* Icon color for consistency */
+}
+
+/* Alert Icon Styles (Optional) */
+.alert-icon {
+    margin-right: 0.5rem;
+    font-size: 1.5rem; /* Larger icon for better visibility */
+    vertical-align: middle; /* Align with text */
+}
+
+/* Hover effects for better interaction */
+.alert:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+/* css */
+.inventory-page {
+    padding: 30px;
+    background-color: #f8fafc;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    margin: 30px auto;
+}
+
+/* Header Styles */
+.inventory-page h2 {
+    font-size: 2.25rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Table Styles */
+.inventory-page .table {
+    margin-top: 30px;
+    width: 100%;
+    border-collapse: separate;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.inventory-page .table th,
+.inventory-page .table td {
+    padding: 18px 24px;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.inventory-page .table th {
+    background-color: #f1f3f5;
+    color: #1a2942;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.inventory-page .table tr:hover {
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+}
+
+/* Search Bar Styles */
+.inventory-page .search-bar {
+    margin-bottom: 30px;
+}
+
+.inventory-page .search-bar input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #e0e5e9;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.inventory-page .search-bar input:focus {
+    border-color: #3498db;
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+
+/* Alert Styles */
+.inventory-page .alert {
+    margin-bottom: 20px;
+}
+
+/* Pagination Styles */
+.inventory-page .pagination {
+    margin-top: 20px;
+}

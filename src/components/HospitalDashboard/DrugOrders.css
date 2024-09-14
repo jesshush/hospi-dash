@@ -1,0 +1,122 @@
+/* Style for the Drug Orders page */
+.drug-orders {
+    padding: 40px;
+    background-color: #f8fafc;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    margin: 20px auto;
+  }
+  
+  /* Title Styles */
+  .drug-orders h1 {
+    font-size: 2.5rem;
+    color: #1a2942;
+    margin-bottom: 40px;
+    font-weight: 800;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  }
+  
+  /* Form Styles */
+  .drug-orders .form-control {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #e0e5e9;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+  }
+  
+  .drug-orders .form-control:focus {
+    border-color: #3498db;
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.2);
+    outline: none;
+  }
+  
+  /* Table Styles */
+  .drug-orders .table {
+    margin-top: 30px;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+  }
+  
+  .drug-orders .table th,
+  .drug-orders .table td {
+    padding: 18px 24px;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .drug-orders .table th {
+    background-color: #f1f3f5;
+    color: #1a2942;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .drug-orders .table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .drug-orders .table tr:hover {
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button Styles */
+  .drug-orders .btn-secondary {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(52, 152, 219, 0.2);
+  }
+  
+  .drug-orders .btn-secondary:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(41, 128, 185, 0.3);
+  }
+  
+  .drug-orders .btn-secondary:focus,
+  .drug-orders .btn-secondary:active {
+    outline: none;
+    text-decoration: none;
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(41, 128, 185, 0.2);
+  }
+  
+  /* Search Bar Styles (if applicable) */
+  .drug-orders .search-bar {
+    margin-bottom: 30px;
+  }
+  
+  .drug-orders .search-bar input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #e0e5e9;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+  }
+  
+  .drug-orders .search-bar input:focus {
+    border-color: #3498db;
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.2);
+    outline: none;
+  }

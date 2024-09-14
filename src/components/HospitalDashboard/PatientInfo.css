@@ -1,0 +1,92 @@
+.patient-info-page {
+    padding: 30px;
+    background-color: #f8fafc;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    margin: 30px auto;
+}
+
+/* Header Styles */
+.patient-info-page h2 {
+    font-size: 2.25rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Table Styles */
+.patient-info-page .table {
+    margin-top: 30px;
+    width: 100%;
+    border-collapse: separate;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.patient-info-page .table th,
+.patient-info-page .table td {
+    padding: 18px 24px;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.patient-info-page .table th {
+    background-color: #f1f3f5;
+    color: #1a2942;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.patient-info-page .table tr:hover {
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+}
+
+/* Search Bar Styles */
+.patient-info-page .search-bar {
+    margin-bottom: 30px;
+}
+
+.patient-info-page .search-bar input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #e0e5e9;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.patient-info-page .search-bar input:focus {
+    border-color: #3498db;
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+
+/* Button Styles */
+.patient-info-page .btn-secondary {
+    margin-bottom: 30px;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5a5959;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.patient-info-page .btn-secondary:hover {
+    background-color: #004494;
+    transform: translateY(-2px);
+}
+
+.patient-info-page .btn-secondary:focus,
+.patient-info-page .btn-secondary:active {
+    outline: none;
+    text-decoration: none;
+}

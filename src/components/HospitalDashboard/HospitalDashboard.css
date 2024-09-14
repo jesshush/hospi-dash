@@ -1,0 +1,142 @@
+#root {
+    overflow-x: hidden !important;
+}
+
+.hospital-dashboard {
+    display: flex;
+}
+/* Main Content */
+.main-content {
+    /* z-index: 1;
+    margin-left: 270px !important; */
+    padding: 10px 80px;
+    flex: 1;
+    /* Space for the fixed sidebar */
+    background-color: #f4f5f7;
+}
+
+/* Header */
+.header {
+    background-color: #5cabff;
+    /* Light blue for the header */
+    border-radius: 0.5rem;
+    padding: 25px;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Cards */
+.card {
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.card p {
+    font-size: 1.75rem;
+    margin: 0;
+    color: #555;
+}
+
+/* Chart Container */
+.chart-container {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container canvas {
+    width: 100%;
+    height: 100%;
+}
+
+/* Inventory Alerts */
+.alert-indicator {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.critical {
+    background-color: #e1e73c !important;
+}
+
+.warning {
+    background-color: #f7b924 !important;
+}
+
+.moderate {
+    background-color: #dd9b31 !important;
+}
+
+.expired {
+    background-color: #e74c3c !important;
+}
+
+ul.list-unstyled li,
+ul#inventoryAlerts li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Scrollable alert bar */
+.alertBar {
+    height: 240px;
+    /* Adjust height as needed */
+    overflow-y: auto;
+}
+
+/* Scrollbar styling */
+.alertBar::-webkit-scrollbar {
+    width: 8px;
+    /* Slim scrollbar */
+}
+
+.alertBar::-webkit-scrollbar-thumb {
+    background-color: rgba(200, 200, 200, 0.6);
+    /* Light color with transparency */
+    border-radius: 10px;
+    /* Rounded edges */
+}
+
+.alertBar::-webkit-scrollbar-track {
+    background-color: transparent;
+    /* Transparent background */
+}
+
+.hiddenTabs .navTabs {
+    display: none;
+}
+.hiddenTabs .tabContent {
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+    }
+}

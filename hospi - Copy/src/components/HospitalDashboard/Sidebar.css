@@ -1,0 +1,96 @@
+/* Sidebar Container */
+.sidebar-container {
+    position: relative;
+}
+
+.sidebar-toggle {
+    position: fixed;
+    top: 20px;
+    left: 25px;
+    z-index: 1050; /* Ensure it's above other content */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.sidebar-toggle .hamburger-icon::before {
+    content: '\2630'; /* Hamburger icon */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100% !important;
+    width: 250px;
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-x: hidden;
+    transition: transform 1s ease;
+    transform: translateX(10);
+    z-index: 1040; /* Ensure it's below the toggle but above the content */
+}
+
+.sidebar .open {
+    transform: translateX(0);
+}
+
+.sidebar-header {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.sidebar-links {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-link {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.sidebar-link:hover {
+    background-color: #495057;
+}
+
+/* Content Shrinking */
+.content-shrink {
+    margin-left: 250px; /* Adjust based on sidebar width */
+    transition: margin-left 0.3s ease;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .sidebar-container {
+        width: 100%;
+    }
+    
+    .sidebar {
+        width: 100%;
+        transform: translateX(-100%);
+    }
+
+    .sidebar .open {
+        transform: translateX(0);
+    }
+    
+    .sidebar-toggle {
+        display: block;
+    }
+    
+    .content-shrink {
+        margin-left: 0;
+    }
+}

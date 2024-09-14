@@ -1,0 +1,68 @@
+/* Stock Alerts Container */
+.stock-alerts {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Slightly more rounded corners for a modern look */
+    background-color: #fff;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Deeper shadow for added depth */
+    max-width: 1000px; /* Limit the width for better content focus */
+    margin: 20px auto; /* Center the alerts container */
+    font-family: 'Arial', sans-serif; /* Consistent font across alerts */
+}
+
+/* Close Button */
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    line-height: 1;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #000;
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Alert Item */
+.alert-item {
+    border-radius: 5px; /* Increased rounding for a smoother appearance */
+    padding: 15px; /* More padding for a better visual hierarchy */
+    margin-bottom: 15px; /* Increased spacing between alerts */
+    color: #fff;
+    font-size: 16px; /* Slightly larger font for better readability */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Aligns text and close button */
+}
+
+/* Alert Background Colors */
+.bg-warning {
+    background: linear-gradient(135deg, #ffc107 0%, #ffca28 100%);
+}
+
+.bg-danger {
+    background: linear-gradient(135deg, #dc3545 0%, #f8d7da 100%);
+}
+
+.bg-primary {
+    background: linear-gradient(135deg, #007bff 0%, #66b2ff 100%);
+}
+
+/* Optional: Add some responsive design */
+@media (max-width: 768px) {
+    .stock-alerts {
+        padding: 10px;
+    }
+
+    .alert-item {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 10px;
+    }
+
+    .close-btn {
+        font-size: 20px; /* Slightly smaller close button on smaller screens */
+    }
+}

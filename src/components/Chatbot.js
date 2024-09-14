@@ -16,7 +16,7 @@ const ChatBotIframe = ({ show, onClose }) => {
     >
       {show && (
         <iframe
-          src="https://www.chatbase.co/chatbot-iframe/dvS3svWzFk4RSjRHdFIUN"
+          src="https://www.chatbase.co/chatbot-iframe/8Fc8z8SQJKZ2YknGwYvkV"
           width="100%"
           height="100%"
           style={{ border: 'none' }}
